@@ -1,0 +1,64 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "clent makes a call to GET /currencyconvert",
+        "description": "",
+        "id": "currency-can-be-converted;clent-makes-a-call-to-get-/currencyconvert",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2357494096,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the cleint calls /currencyconvert",
+            "match": {
+              "location": "CurrencyStepDef.clientcallscurrencyconvert()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4226585,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the client receives the status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 39
+                }
+              ],
+              "location": "CurrencyStepDef.the_client_receives_the_status_code_of(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 54015,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the response should contain",
+            "match": {
+              "location": "CurrencyStepDef.the_response_should_contain()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Currency can be converted",
+    "description": "",
+    "id": "currency-can-be-converted",
+    "keyword": "Feature",
+    "uri": "src/com/cornival/rest/feature/currency.feature"
+  }
+]
